@@ -1,0 +1,356 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    min-height: 60px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-logo {
+    height: 50px; 
+    width: 100px;
+    flex-shrink: 0;
+}
+
+.logo {
+    background-image: url(amazon_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 100%; 
+}
+
+.border {
+    border: 1.8px solid transparent;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.border:hover {
+    border: 1.8px solid white;
+}
+
+.add-1 {
+    color: #CCCCCC;
+    font-size: 0.85rem;  
+}
+
+.add-2 {
+    color: #FFFFFF;
+    font-size: 1rem; 
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-search {
+    display: flex;
+    flex: 1;
+    max-width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.nav-search:hover {
+    border: 2px solid #F3A848;
+}
+
+.search-select {
+    background-color: #D4D4D4;
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    padding: 0 10px;
+    outline: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #131921;
+    background-color: #F3A848;
+    cursor: pointer;
+}
+
+.nav-country {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+
+.country-select {
+    background: transparent;
+    display: flex;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.flag {
+    width: 22px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+span {
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.87rem;
+    font-weight: 700;
+}
+
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Panel */
+.panel {
+    min-height: 40px;
+    background-color: #242F3E;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+.panel-options p {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.panel-options {
+    font-size: 0.85rem;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.panel-deals {
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url(hero-image2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-message {
+    background-color: white;
+    color: black;
+    min-height: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 90%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.hero-message a {
+    color: #007185;
+}
+
+/* Shop Section Grid */
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #e2e7e6;
+    padding: 15px;
+    gap: 15px;
+}
+
+.box {
+    width: 23%;
+    background-color: white;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box-img {
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content p {
+    color: #007185;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    margin-top: 15px;
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white; 
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+    text-decoration: none;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+.foot-panel3 {
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid #37475a;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-panel4 {
+    background-color: #131921;
+    color: white;
+    padding: 20px 10px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.pages { 
+    padding-bottom: 5px; 
+}
+
+.pages a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+/* ==========================================
+   MEDIA QUERIES (RESPONSIVENESS)
+   ========================================== */
+
+/* Tablet View (2 Cards per row) */
+@media (max-width: 992px) {
+    .box {
+        width: 48%;
+    }
+
+    .nav-country, 
+    .nav-address {
+        display: none; /* Hide low-priority items on tablet */
+    }
+}
+
+/* Mobile View (Single Column Layout) */
+@media (max-width: 768px) {
+    /* Navbar layout adjustment */
+    .navbar {
+        padding: 8px;
+    }
+
+    /* Move search bar to its own row below logo */
+    .nav-search {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 5px;
+    }
+
+    .hero-section {
+        height: 230px;
+    }
+
+    /* 1 Product Box per row on small phones */
+    .box {
+        width: 100%;
+    }
+
+    /* Simplify panel & footer options */
+    .panel-deals {
+        display: none;
+    }
+
+    .foot-panel2 {
+        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
